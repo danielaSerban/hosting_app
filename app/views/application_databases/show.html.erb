@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @application_database.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @application_database.user %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @application_database.password %>
+</p>
+
+<%= link_to 'Edit', edit_application_database_path(@application_database) %> |
+<%= link_to 'Back', application_databases_path %>

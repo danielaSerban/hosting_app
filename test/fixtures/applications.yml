@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: MyString
+  githuburl: MyString
+  httpbasicUser: MyString
+  httpbasicpassword: MyString
+  adminuser: MyString
+  adminpassword: MyString
+  serverPath: MyString
+  flag: false
+
+two:
+  url: MyString
+  githuburl: MyString
+  httpbasicUser: MyString
+  httpbasicpassword: MyString
+  adminuser: MyString
+  adminpassword: MyString
+  serverPath: MyString
+  flag: false

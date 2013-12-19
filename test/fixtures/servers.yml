@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hostName: MyString
+  internalIP: MyString
+  externalIP: MyString
+  user: MyString
+  password: MyString
+  rootPassword: MyString
+  publicSSHKey: MyString
+
+two:
+  hostName: MyString
+  internalIP: MyString
+  externalIP: MyString
+  user: MyString
+  password: MyString
+  rootPassword: MyString
+  publicSSHKey: MyString

@@ -1,0 +1,21 @@
+<%= simple_form_for @server do |f| %>
+    <% if @server.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@server.errors.count, "error") %> prohibited this server from being saved:</h2>
+
+          <ul>
+            <% @server.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.input :hostName, label: "Host Name" %>
+    <%= f.input :internalIP, label: "Internal IP" %>
+    <%= f.input :externalIP, label: "External IP" %>
+    <%= f.input :user, label: "User" %>
+    <%= f.input :password, label: "Password" %>
+    <%= f.input :rootPassword, label: "Root Password" %>
+    <%= f.input :publicSSHKey, label: "Public SSH Key" %>
+<% end %>

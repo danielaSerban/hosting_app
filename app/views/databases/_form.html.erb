@@ -1,0 +1,20 @@
+<%= simple_form_for @database do |f| %>
+
+    <% if @database.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@application.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+          <ul>
+            <% @application.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%= f.input :type, label: "Type" %>
+    <%= f.input :rootpassword, label: "Root Password" %>
+
+    <%= f.button :submit %>
+<% end %>
+

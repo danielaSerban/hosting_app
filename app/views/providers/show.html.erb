@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @provider.name %>
+</p>
+
+<p>
+  <strong>Contact Name:</strong>
+  <%= @provider.contactname %>
+</p>
+
+<p>
+  <strong>Contact Email:</strong>
+  <%= @provider.contactemail %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @provider.username %>
+</p>
+
+<p>
+  <strong>User Password:</strong>
+  <%= @provider.userpassword %>
+</p>
+
+<%= link_to 'Edit', edit_provider_path(@provider) %> |
+<%= link_to 'Back', providers_path %>

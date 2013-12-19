@@ -1,0 +1,41 @@
+<h1>Listing applications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Githuburl</th>
+      <th>Http Basic User</th>
+      <th>Http Basic Password</th>
+      <th>Administrator User</th>
+      <th>Administrator Password</th>
+      <th>Server folder Path</th>
+      <th>Flag</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @applications.each do |application| %>
+      <tr>
+        <td><%= application.url %></td>
+        <td><%= application.githuburl %></td>
+        <td><%= application.httpbasicUser %></td>
+        <td><%= application.httpbasicpassword %></td>
+        <td><%= application.adminuser %></td>
+        <td><%= application.adminpassword %></td>
+        <td><%= application.serverPath %></td>
+        <td><%= application.flag %></td>
+        <td><%= link_to 'Show', application %></td>
+        <td><%= link_to 'Edit', edit_application_path(application) %></td>
+        <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Application', new_application_path %>

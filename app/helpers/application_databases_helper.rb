@@ -1,0 +1,2 @@
+module ApplicationDatabasesHelper
+end

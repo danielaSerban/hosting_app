@@ -1,0 +1,31 @@
+<h1>Listing application databases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>User</th>
+      <th>Password</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @application_databases.each do |application_database| %>
+      <tr>
+        <td><%= application_database.name %></td>
+        <td><%= application_database.user %></td>
+        <td><%= application_database.password %></td>
+        <td><%= link_to 'Show', application_database %></td>
+        <td><%= link_to 'Edit', edit_application_database_path(application_database) %></td>
+        <td><%= link_to 'Destroy', application_database, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Application database', new_application_database_path %>

@@ -1,0 +1,39 @@
+<h1>Listing servers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>HostName</th>
+      <th>Internal IP</th>
+      <th>External IP</th>
+      <th>User</th>
+      <th>Password</th>
+      <th>RootPassword</th>
+      <th>PublicSSHKey</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @servers.each do |server| %>
+      <tr>
+        <td><%= server.hostName %></td>
+        <td><%= server.internalIP %></td>
+        <td><%= server.externalIP %></td>
+        <td><%= server.user %></td>
+        <td><%= server.password %></td>
+        <td><%= server.rootPassword %></td>
+        <td><%= server.publicSSHKey %></td>
+        <td><%= link_to 'Show', server %></td>
+        <td><%= link_to 'Edit', edit_server_path(server) %></td>
+        <td><%= link_to 'Destroy', server, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Server', new_server_path %>

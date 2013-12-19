@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @application.url %>
+</p>
+
+<p>
+  <strong>Githuburl:</strong>
+  <%= @application.githuburl %>
+</p>
+
+<p>
+  <strong>Http Basic User:</strong>
+  <%= @application.httpbasicUser %>
+</p>
+
+<p>
+  <strong>Http Basic Password:</strong>
+  <%= @application.httpbasicpassword %>
+</p>
+
+<p>
+  <strong>Admin User:</strong>
+  <%= @application.adminuser %>
+</p>
+
+<p>
+  <strong>Admin Password:</strong>
+  <%= @application.adminpassword %>
+</p>
+
+<p>
+  <strong>Server Folder Path:</strong>
+  <%= @application.serverPath %>
+</p>
+
+<p>
+  <strong>Flag:</strong>
+  <%= @application.flag %>
+</p>
+
+<%= link_to 'Edit', edit_application_path(@application) %> |
+<%= link_to 'Back', applications_path %>
