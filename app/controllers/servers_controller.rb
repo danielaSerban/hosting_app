@@ -1,3 +1,4 @@
+
 class ServersController < ApplicationController
   before_action :set_server, only: [:show, :edit, :update, :destroy]
 
@@ -71,4 +72,6 @@ class ServersController < ApplicationController
     def server_params
       params.require(:server).permit(:hostName, :internalIP, :externalIP, :user, :password, :rootPassword, :publicSSHKey)
     end
-end
+
+
+  end

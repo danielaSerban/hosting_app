@@ -1,10 +1,11 @@
-<h1>Listing databases</h1>
+<h2>Databases</h2>
 
 <table>
   <thead>
     <tr>
       <th>Type</th>
       <th>Root Password</th>
+      <th>Server</th>
       <th></th>
       <th></th>
       <th></th>
@@ -14,10 +15,11 @@
   <tbody>
     <% @databases.each do |database| %>
       <tr>
-        <td><%= database.type %></td>
-        <td><%= database.rootpassword %></td>
-        <td><%= link_to 'Show', database %></td>
-        <td><%= link_to 'Edit', edit_database_path(database) %></td>
+        <td><%= database.db_type %>&nbsp&nbsp</td>
+        <td><%= database.rootpassword %>&nbsp&nbsp</td>
+        <td><%= database.server_id %>&nbsp&nbsp</td>
+        <td><%= link_to 'Show', database %>&nbsp&nbsp</td>
+        <td><%= link_to 'Edit', edit_database_path(database) %>&nbsp&nbsp</td>
         <td><%= link_to 'Destroy', database, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

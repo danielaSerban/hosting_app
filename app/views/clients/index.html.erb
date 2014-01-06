@@ -1,4 +1,4 @@
-<h1>Listing clients</h1>
+<h2>Clients</h2>
 
 <table>
   <thead>
@@ -13,9 +13,9 @@
   <tbody>
     <% @clients.each do |client| %>
       <tr>
-        <td><%= client.name %></td>
-        <td><%= link_to 'Show', client %></td>
-        <td><%= link_to 'Edit', edit_client_path(client) %></td>
+        <td><%= client.name %>&nbsp&nbsp</td>
+        <td><%= link_to 'Show', client %>&nbsp&nbsp</td>
+        <td><%= link_to 'Edit', edit_client_path(client) %>&nbsp&nbsp</td>
         <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

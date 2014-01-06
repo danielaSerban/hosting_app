@@ -12,6 +12,8 @@ HostingApp::Application.routes.draw do
   resources :providers
 
   root  'home_page#home_page'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

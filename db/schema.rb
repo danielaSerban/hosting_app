@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131219155818) do
+ActiveRecord::Schema.define(version: 20131231114814) do
 
   create_table "application_databases", force: true do |t|
     t.string   "name"
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20131219155818) do
   end
 
   create_table "databases", force: true do |t|
-    t.string   "type"
+    t.string   "db_type"
     t.string   "rootpassword"
     t.datetime "created_at"
     t.datetime "updated_at"

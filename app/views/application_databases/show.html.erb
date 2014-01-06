@@ -15,5 +15,6 @@
   <%= @application_database.password %>
 </p>
 
+<%= button_to("Un-Follow", :controller=>"servers", :action=> "ping") %>
 <%= link_to 'Edit', edit_application_database_path(@application_database) %> |
 <%= link_to 'Back', application_databases_path %>

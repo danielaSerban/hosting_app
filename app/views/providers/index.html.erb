@@ -1,13 +1,13 @@
-<h1>Listing providers</h1>
+<h2>Providers</h2>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
-      <th>Contactname</th>
-      <th>Contactemail</th>
-      <th>Username</th>
-      <th>Userpassword</th>
+      <th>Contactname &nbsp&nbsp</th>
+      <th>Contactemail &nbsp&nbsp</th>
+      <th>Username &nbsp&nbsp</th>
+      <th>Userpassword &nbsp&nbsp</th>
       <th></th>
       <th></th>
       <th></th>
@@ -17,12 +17,12 @@
   <tbody>
     <% @providers.each do |provider| %>
       <tr>
-        <td><%= provider.name %></td>
-        <td><%= provider.contactname %></td>
-        <td><%= provider.contactemail %></td>
-        <td><%= provider.username %></td>
-        <td><%= provider.userpassword %></td>
-        <td><%= link_to 'Show', provider %></td>
+        <td><%= provider.name %> &nbsp&nbsp</td>
+        <td><%= provider.contactname %>&nbsp&nbsp&</td>
+        <td><%= provider.contactemail %>&nbsp&nbsp</td>
+        <td><%= provider.username %>&nbsp&nbsp</td>
+        <td><%= provider.userpassword %>&nbsp&nbsp</td>
+        <td><%= link_to 'Show', provider %>&nbsp&nbsp</td>
         <td><%= link_to 'Edit', edit_provider_path(provider) %></td>
         <td><%= link_to 'Destroy', provider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
