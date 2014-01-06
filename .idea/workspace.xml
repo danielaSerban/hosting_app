@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6714aaca-42bd-43e0-9b5b-022781b672d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/databases/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/databases/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/clients_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/clients_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/database.rb" afterPath="$PROJECT_DIR$/app/models/database.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/databases_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/databases_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/application_databases/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/application_databases/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home_page/home_page.html.erb" afterPath="$PROJECT_DIR$/app/views/home_page/home_page.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/hosting_app.iml" afterPath="$PROJECT_DIR$/.idea/hosting_app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/application_databases/index.html.erb" afterPath="$PROJECT_DIR$/app/views/application_databases/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/applications/index.html.erb" afterPath="$PROJECT_DIR$/app/views/applications/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/index.html.erb" afterPath="$PROJECT_DIR$/app/views/clients/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/databases/index.html.erb" afterPath="$PROJECT_DIR$/app/views/databases/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/providers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/providers/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/servers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/servers_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/servers_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/servers_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/application_databases/show.html.erb" afterPath="$PROJECT_DIR$/app/views/application_databases/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/databases/show.html.erb" afterPath="$PROJECT_DIR$/app/views/databases/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/providers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/providers/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/servers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/servers/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hosting_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,7 +54,7 @@
     <file path="/client.rb" changelist="6714aaca-42bd-43e0-9b5b-022781b672d1" time="1387471847303" ignored="false" />
     <file path="/20131231114814_rename_type_column.rb" changelist="6714aaca-42bd-43e0-9b5b-022781b672d1" time="1388490546836" ignored="false" />
     <file path="/databases_controller.rb" changelist="6714aaca-42bd-43e0-9b5b-022781b672d1" time="1388491772867" ignored="false" />
-    <file path="/servers_helper.rb" changelist="6714aaca-42bd-43e0-9b5b-022781b672d1" time="1389017213475" ignored="false" />
+    <file path="/servers_helper.rb" changelist="6714aaca-42bd-43e0-9b5b-022781b672d1" time="1389017551136" ignored="false" />
     <file path="/servers_controller.rb" changelist="6714aaca-42bd-43e0-9b5b-022781b672d1" time="1389008753529" ignored="false" />
     <file path="/application.js" changelist="6714aaca-42bd-43e0-9b5b-022781b672d1" time="1389004751847" ignored="false" />
     <file path="/clients_controller.rb" changelist="6714aaca-42bd-43e0-9b5b-022781b672d1" time="1389009095361" ignored="false" />
@@ -116,7 +90,7 @@
       <file leaf-file-name="servers_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/servers_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="33" selection-start="558" selection-end="558" vertical-scroll-proportion="0.64041096">
+            <state line="21" column="12" selection-start="534" selection-end="534" vertical-scroll-proportion="0.61130136">
               <folding />
             </state>
           </provider>
@@ -1213,7 +1187,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/servers_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="33" selection-start="558" selection-end="558" vertical-scroll-proportion="0.64041096">
+        <state line="21" column="12" selection-start="534" selection-end="534" vertical-scroll-proportion="0.61130136">
           <folding />
         </state>
       </provider>

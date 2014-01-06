@@ -18,7 +18,8 @@ require 'uri'
               puts @text_var
               return true
             end
-          rescue Errno::ECONNREFUSED
+            rescue Errno::ECONNREFUSED
+            @text_var = "Server not responding"
             return false
           end
     end
