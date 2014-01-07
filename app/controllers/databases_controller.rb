@@ -35,8 +35,7 @@ class DatabasesController < ApplicationController
         format.json { render json: @database.errors, status: :unprocessable_entity }
       end
     end
-  end
-
+ end
   # PATCH/PUT /databases/1
   # PATCH/PUT /databases/1.json
   def update

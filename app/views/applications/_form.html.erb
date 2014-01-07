@@ -20,6 +20,8 @@
     <%= f.input :adminpassword, label: "Administrator Password" %>
     <%= f.input :serverPath, label: "Server Path" %>
     <%= f.input :flag, label: "Flag" %>
-
+    <%= f.association :client,  collection: Client.all,  prompt: "Choose a client" %>
+    <%= f.association :application_database,  collection: ApplicationDatabase.all,  prompt: "Choose an Application Database" %>
+    <%= f.association :server,  collection: Server.all.ids,  prompt: "Choose a Server" %>
     <%= f.button :submit %>
 <% end %>

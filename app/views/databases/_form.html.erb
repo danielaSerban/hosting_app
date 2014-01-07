@@ -14,7 +14,7 @@
 
     <%= f.input :db_type, label: "Type" %>
     <%= f.input :rootpassword, label: "Root Password" %>
-    <%= f.input :server_id, label: "Server Id" %>
+    <%= f.association :server,  collection: Server.all.ids,  prompt: "Choose a Server" %>
     <%= f.button :submit %>
 <% end %>
 
