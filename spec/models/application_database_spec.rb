@@ -9,6 +9,6 @@ describe ApplicationDatabase do
   it { should respond_to (:updated_at) }
   it { should respond_to (:database_id) }
 
-  it { should belong_to(:database) }
+  it { should belong_to(:database).with_foreign_key('database_id') }
   it { should validate_presence_of (:name) }
   end
