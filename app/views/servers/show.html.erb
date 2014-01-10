@@ -1,3 +1,4 @@
+<%= javascript_include_tag "prototype" %>
 
 <p id="notice"><%= notice %></p>
 
@@ -36,9 +37,12 @@
   <%= @server.publicSSHKey %>
 </p>
 
-<input type=button value="Ping this server" onclick="<%= ping_server %>; showPing()">
+<%= button_to "Ping", {:action => :ping_server}, :method => :get, :remote => true  %>
 
-<div id="myDiv" style="visibility: hidden" ><h3><%=@text_var%></h3></div>
+<div id="div1">
+
+ </div>
+
 <%= link_to 'Edit', edit_server_path(@server) %> |
 <%= link_to 'Back', servers_path %>
 

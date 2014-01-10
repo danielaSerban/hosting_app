@@ -6,7 +6,6 @@ require 'uri'
 
 
     def ping_server()
-            @text_var = nil
             url=URI.parse("http://www.google.com")
             start_time = Time.now
             response=Net::HTTP.get(url)
@@ -14,9 +13,7 @@ require 'uri'
             if response==""
               return false
             else
-              @text_var = end_time.to_s()
-              puts @text_var
-              return true
+              return end_time.to_s()
             end
             rescue Errno::ECONNREFUSED
             @text_var = "Server not responding"
