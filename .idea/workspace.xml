@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6714aaca-42bd-43e0-9b5b-022781b672d1" name="Default" comment="commit">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/application_databases/index.html.erb" afterPath="$PROJECT_DIR$/app/views/application_databases/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/applications/index.html.erb" afterPath="$PROJECT_DIR$/app/views/applications/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/databases/index.html.erb" afterPath="$PROJECT_DIR$/app/views/databases/index.html.erb" />
     </list>
     <ignored path="hosting_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,9 +92,27 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/applications/_form.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/databases/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="131" selection-start="1077" selection-end="1204" vertical-scroll-proportion="-15.692307">
+            <state line="16" column="131" selection-start="643" selection-end="643" vertical-scroll-proportion="-10.461538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/databases/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="9" selection-start="316" selection-end="316" vertical-scroll-proportion="-11.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/databases/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="43" selection-start="451" selection-end="451" vertical-scroll-proportion="0.6060606">
               <folding />
             </state>
           </provider>
@@ -119,10 +136,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/applications/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="16" selection-start="993" selection-end="993" vertical-scroll-proportion="0.59814817">
+            <state line="34" column="16" selection-start="993" selection-end="993" vertical-scroll-proportion="-22.23077">
               <folding />
             </state>
           </provider>
@@ -164,24 +181,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="23" selection-start="1642" selection-end="1649" vertical-scroll-proportion="-11.08">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_database.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/application_database.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="49" selection-start="85" selection-end="96" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -205,7 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/clients/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/databases/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/providers/edit.html.erb" />
@@ -221,6 +219,7 @@
         <option value="$PROJECT_DIR$/app/views/application_databases/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application_databases/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/applications/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/databases/index.html.erb" />
       </list>
     </option>
   </component>
@@ -1155,20 +1154,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/applications_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="145" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/applications/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/clients/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1179,13 +1164,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/providers/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/databases/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="131" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1262,7 +1240,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/applications/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="16" selection-start="993" selection-end="993" vertical-scroll-proportion="0.59814817">
+        <state line="34" column="16" selection-start="993" selection-end="993" vertical-scroll-proportion="-22.23077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/databases/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="131" selection-start="643" selection-end="643" vertical-scroll-proportion="-10.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/databases/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="316" selection-end="316" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/databases/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="43" selection-start="451" selection-end="451" vertical-scroll-proportion="0.6060606">
           <folding />
         </state>
       </provider>

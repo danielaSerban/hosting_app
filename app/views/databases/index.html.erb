@@ -15,10 +15,10 @@
   <tbody>
     <% @databases.each do |database| %>
       <tr>
-        <td><%= database.db_type %>&nbsp&nbsp</td>
-        <td><%= database.rootpassword %>&nbsp&nbsp</td>
-        <td><%= database.server_id %>&nbsp&nbsp</td>
-        <td><%= link_to 'Show', database %>&nbsp&nbsp</td>
+        <td><%= database.db_type %></td>
+        <td><%= database.rootpassword %></td>
+        <td><%= database.server_id %></td>
+        <td><%= link_to 'Show', database %></td>
         <td><%= link_to 'Edit', edit_database_path(database) %>&nbsp&nbsp</td>
         <td><%= link_to 'Destroy', database, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
