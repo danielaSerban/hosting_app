@@ -11,6 +11,9 @@
       <th>Administrator Password </th>
       <th>Server folder Path </th>
       <th>Flag</th>
+      <th>Client</th>
+      <th>Application Database</th>
+      <th>Server</th>
       <th></th>
       <th></th>
       <th></th>
@@ -28,6 +31,9 @@
         <td><%= application.adminpassword %></td>
         <td><%= application.serverPath %></td>
         <td><%= application.flag %></td>
+        <td><%= Client.find_by(application.client_id).name %></td>
+        <td><%= ApplicationDatabase.find_by(application.application_database_id).name %></td>
+        <td><%= application.server_id %></td>
         <td><%= link_to 'Show', application %></td>
         <td><%= link_to 'Edit', edit_application_path(application) %></td>
         <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
