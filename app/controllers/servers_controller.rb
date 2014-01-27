@@ -1,6 +1,6 @@
 
 class ServersController < ApplicationController
-  respond_to :html, :js
+  respond_to :html, :js, :json
   before_action :set_server, only: [:show, :edit, :update, :destroy]
 
   # GET /servers
@@ -64,7 +64,21 @@ class ServersController < ApplicationController
   end
 
   def ping_server
+    url=URI.parse("http://www.google.com")
+    start_time = Time.now
+    response=Net::HTTP.get(url)
+
+    end_time = Time.now - start_time
+    respond_to do |format|
+      if response.to_s == ""
+        format.json { render json: {:ping => 'No response from server' }}
+      else
+        format.json { render json: {:ping => end_time.to_s()} }
+      end
+    end
+    rescue Errno::ECONNREFUSED
   end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_server

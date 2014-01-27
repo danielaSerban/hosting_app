@@ -1,7 +1,7 @@
-<%= javascript_include_tag "prototype" %>
-
+<h3> View server </h3>
 <p id="notice"><%= notice %></p>
 
+<div class="show_item" style="display: inline-block">
 <p>
   <strong>HostName:</strong>
   <%= @server.hostName %>
@@ -37,18 +37,16 @@
   <%= @server.publicSSHKey %>
 </p>
 
-<%= button_to "Ping", {:action => :ping_server}, :method => :get, :remote => true  %>
+<%= button_to "Ping this server", "javascript:showPing()"  %>
 
 <div id="div1">
 
- </div>
+</div>
+
 
 <%= link_to 'Edit', edit_server_path(@server) %> |
 <%= link_to 'Back', servers_path %>
 
-<script language="javascript" type="text/javascript">
-    function showPing() {
-        myDiv.style.visibility = "visible";
-    }
-</script>
+</div>
+
 

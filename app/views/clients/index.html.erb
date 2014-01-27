@@ -1,6 +1,6 @@
-<h2>Clients</h2>
+<h3>Clients</h3>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -13,9 +13,9 @@
   <tbody>
     <% @clients.each do |client| %>
       <tr>
-        <td><%= client.name %>&nbsp&nbsp</td>
-        <td><%= link_to 'Show', client %>&nbsp&nbsp</td>
-        <td><%= link_to 'Edit', edit_client_path(client) %>&nbsp&nbsp</td>
+        <td><%= client.name %></td>
+        <td><%= link_to 'Show', client %></td>
+        <td><%= link_to 'Edit', edit_client_path(client) %></td>
         <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Client', new_client_path %>
+<%= link_to 'New Client', new_client_path,  :class => "btn btn-link" %>

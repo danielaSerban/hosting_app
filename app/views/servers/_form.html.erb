@@ -19,5 +19,5 @@
     <%= f.input :rootPassword, label: "Root Password" %>
     <%= f.input :publicSSHKey, label: "Public SSH Key" %>
     <%= f.association :provider,  collection: Provider.all,  prompt: "Choose a Provider" %>
-    <%= f.button :submit %>
+    <%= f.button :submit,  :class => "btn btn-primary" %>
 <% end %>

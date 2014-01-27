@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+<h3>View application</h3>
+<div class="show_item" style="display: inline-block">
 <p>
   <strong>Url:</strong>
   <%= @application.url %>
@@ -40,5 +41,6 @@
   <%= @application.flag %>
 </p>
 
-<%= link_to 'Edit', edit_application_path(@application) %> |
-<%= link_to 'Back', applications_path %>
+<%= link_to 'Edit', edit_application_path(@application), :class => "btn btn-link"%> |
+<%= link_to 'Back', applications_path, :class => "btn btn-link" %>
+</div>

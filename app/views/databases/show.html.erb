@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
+<h3>View database</h3>
 
+<div class="show_item" style="display: inline-block">
 <p>
   <strong>Type:</strong>
   <%= @database.db_type %>
@@ -15,5 +17,6 @@
   <%= @database.server_id %>
 </p>
 
-<%= link_to 'Edit', edit_database_path(@database) %> |
-<%= link_to 'Back', databases_path %>
+<%= link_to 'Edit', edit_database_path(@database), :class => "btn btn-link" %> |
+<%= link_to 'Back', databases_path, :class => "btn btn-link" %>
+</div>

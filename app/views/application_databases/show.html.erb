@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
+<h3 >View application database </h3>
 
+<div class="show_item" style="display: inline-block">
 <p>
   <strong>Name:</strong>
   <%= @application_database.name %>
@@ -14,7 +16,7 @@
   <strong>Password:</strong>
   <%= @application_database.password %>
 </p>
+  <%= link_to 'Edit', edit_application_database_path(@application_database), :class => "btn btn-link" %> |
+  <%= link_to 'Back', application_databases_path, :class => "btn btn-link" %>
+</div>
 
-<%= button_to("Un-Follow", :controller=>"servers", :action=> "ping") %>
-<%= link_to 'Edit', edit_application_database_path(@application_database) %> |
-<%= link_to 'Back', application_databases_path %>
