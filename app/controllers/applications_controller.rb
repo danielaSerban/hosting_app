@@ -69,6 +69,6 @@ class ApplicationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def application_params
-      params.require(:application).permit(:url, :githuburl, :httpbasicUser, :httpbasicpassword, :adminuser, :adminpassword, :serverPath, :flag)
+      params.require(:application).permit(:url, :githuburl, :httpbasicUser, :httpbasicpassword, :adminuser, :adminpassword, :serverPath, :flag, :client_id, :application_database_id, :server_id)
     end
 end

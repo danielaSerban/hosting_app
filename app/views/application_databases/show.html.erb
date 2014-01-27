@@ -16,6 +16,10 @@
   <strong>Password:</strong>
   <%= @application_database.password %>
 </p>
+<p>
+  <strong>Database:</strong>
+  <%= @application_database.database_id %>
+</p>
   <%= link_to 'Edit', edit_application_database_path(@application_database), :class => "btn btn-link" %> |
   <%= link_to 'Back', application_databases_path, :class => "btn btn-link" %>
 </div>

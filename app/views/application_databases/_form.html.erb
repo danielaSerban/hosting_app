@@ -15,6 +15,7 @@
 
     <%= f.input :name, label: "Name" %>
     <%= f.input :user, label: "User" %>
+    <%= f.association :database, :collection => Database.select("DISTINCT db_type").map { |s| s.db_type},prompt: "Choose a Database Type" %>
     <%= f.button :submit, :class => "btn btn-primary" %>
 
 <% end %>

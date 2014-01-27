@@ -69,6 +69,6 @@ class ApplicationDatabasesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def application_database_params
-      params.require(:application_database).permit(:name, :user, :password)
+      params.require(:application_database).permit(:name, :user, :password, :database_id)
     end
 end

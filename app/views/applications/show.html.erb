@@ -41,6 +41,19 @@
   <%= @application.flag %>
 </p>
 
+<p>
+  <strong>Client:</strong>
+  <%= Client.find_by(@application.client_id).name %>
+</p>
+<p>
+  <strong>Server</strong>
+  <%= @application.server_id %>
+</p>
+<p>
+  <strong>Application Database</strong>
+  <%= ApplicationDatabase.find_by(@application.application_database_id).name %>
+</p>
+
 <%= link_to 'Edit', edit_application_path(@application), :class => "btn btn-link"%> |
 <%= link_to 'Back', applications_path, :class => "btn btn-link" %>
 </div>
