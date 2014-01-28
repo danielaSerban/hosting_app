@@ -13,7 +13,7 @@ describe Server do
   it { should respond_to (:updated_at) }
   it { should respond_to (:provider_id) }
 
-  it { should belong_to(:provider).with_foreign_key('provider_id') }
+  it { should belong_to(:provider) }
 
   it { should validate_presence_of (:hostName)}
   it { should validate_presence_of (:internalIP)}

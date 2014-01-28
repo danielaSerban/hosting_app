@@ -1,5 +1,5 @@
 class ApplicationDatabase < ActiveRecord::Base
-  belongs_to :database, foreign_key: 'database_id'
+  belongs_to :database
 
   validates_presence_of :name
 

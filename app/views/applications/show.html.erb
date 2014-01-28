@@ -43,7 +43,7 @@
 
 <p>
   <strong>Client:</strong>
-  <%= Client.find_by(@application.client_id).name %>
+  <%= @application.client.name %>
 </p>
 <p>
   <strong>Server</strong>
@@ -51,7 +51,7 @@
 </p>
 <p>
   <strong>Application Database</strong>
-  <%= ApplicationDatabase.find_by(@application.application_database_id).name %>
+  <%= @application.application_database.name %>
 </p>
 
 <%= link_to 'Edit', edit_application_path(@application), :class => "btn btn-link"%> |

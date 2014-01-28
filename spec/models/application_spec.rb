@@ -16,8 +16,8 @@ describe Application do
   it { should respond_to (:client_id) }
   it { should respond_to (:application_database_id) }
 
-  it { should belong_to(:server).with_foreign_key('server_id') }
-  it { should belong_to(:application_database).with_foreign_key('application_database_id') }
-  it { should belong_to(:client).with_foreign_key('client_id') }
+  it { should belong_to(:server) }
+  it { should belong_to(:application_database) }
+  it { should belong_to(:client) }
 
 end
