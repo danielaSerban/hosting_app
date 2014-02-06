@@ -14,7 +14,7 @@
 
     <%= f.input :db_type, label: "Type" %>
     <%= f.input :rootpassword, label: "Root Password" %>
-    <%= f.association :server, :collection => Server.select("DISTINCT hostName").map { |s| s.hostName},prompt: "Choose a Server" %>
+    <%= f.association :server, :collection => Server.select("DISTINCT hostName, id").map { |s| [s.hostName, s.id]},prompt: "Choose a Server" %>
     <%= f.button :submit,  :class => "btn btn-primary" %>
 <% end %>
 

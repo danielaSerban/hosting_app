@@ -14,7 +14,7 @@
 
 <p>
   <strong>Server ID:</strong>
-  <%= @database.server_id %>
+  <%= @database.server.hostName %>
 </p>
 
 <%= link_to 'Edit', edit_database_path(@database), :class => "btn btn-link" %> |
