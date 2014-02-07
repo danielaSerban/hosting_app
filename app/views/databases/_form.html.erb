@@ -2,10 +2,10 @@
 
     <% if @database.errors.any? %>
         <div id="error_explanation">
-          <h2><%= pluralize(@application.errors.count, "error") %> prohibited this client from being saved:</h2>
+          <h2><%= pluralize(@database.errors.count, "error") %> prohibited this client from being saved:</h2>
 
           <ul>
-            <% @application.errors.full_messages.each do |msg| %>
+            <% @database.errors.full_messages.each do |msg| %>
                 <li><%= msg %></li>
             <% end %>
           </ul>

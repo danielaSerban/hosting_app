@@ -5,7 +5,7 @@
           <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
 
           <ul>
-            <% @application.errors.full_messages.each do |msg| %>
+            <% @client.errors.full_messages.each do |msg| %>
                 <li><%= msg %></li>
             <% end %>
           </ul>

@@ -78,7 +78,6 @@ class ServersController < ApplicationController
         format.json { render json: {:ping => 'No response from server' }}
       end
     end
-    rescue Errno::ECONNREFUSED
   end
 
   def ping(ip)

@@ -43,15 +43,24 @@
 
 <p>
   <strong>Client:</strong>
-  <%= @application.client.name %>
+  <%= if @application.client.present?
+        @application.client.name
+      end
+  %>
 </p>
 <p>
   <strong>Server</strong>
-  <%= @application.server_id %>
+  <%= if @application.server.present?
+        @application.server.hostName
+      end
+  %>
 </p>
 <p>
   <strong>Application Database</strong>
-  <%= @application.application_database.name %>
+  <%= if  @application.application_database.present?
+        @application.application_database.name
+      end
+  %>
 </p>
 
 <%= link_to 'Edit', edit_application_path(@application), :class => "btn btn-link"%> |
