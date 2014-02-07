@@ -1,3 +1,4 @@
+require 'net/ping'
 
 class ServersController < ApplicationController
   respond_to :html, :js, :json
@@ -64,21 +65,26 @@ class ServersController < ApplicationController
   end
 
   def ping_server
-    url=URI.parse("http://www.google.com")
-    start_time = Time.now
-    response=Net::HTTP.get(url)
 
+    set_server
+    start_time = Time.now
+    ping_result = ping @server.externalIP
     end_time = Time.now - start_time
+
     respond_to do |format|
-      if response.to_s == ""
-        format.json { render json: {:ping => 'No response from server' }}
-      else
+      if ping_result.ping
         format.json { render json: {:ping => end_time.to_s()} }
+      else
+        format.json { render json: {:ping => 'No response from server' }}
       end
     end
     rescue Errno::ECONNREFUSED
   end
 
+  def ping(ip)
+    pt = Net::Ping::External.new(ip)
+    return pt
+  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_server
