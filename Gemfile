@@ -15,8 +15,6 @@ gem 'capybara'
 
 group :development do
   gem 'sqlite3', '1.3.8'
-  gem 'shoulda-matchers'
-  gem 'rspec-rails', '2.13.1'
 end
 group :test do
   gem 'shoulda-matchers'
