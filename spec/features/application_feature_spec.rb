@@ -44,6 +44,7 @@ feature "Application Management" do
 
   scenario "User visits an application show page" do
     index_path = polymorphic_path([:applications])
+
     visit index_path
     expect(current_path).to eq index_path
   end

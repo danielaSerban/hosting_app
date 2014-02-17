@@ -12,6 +12,7 @@ gem 'net-ping', '~> 1.7.1'
 gem "prototype-rails", "~> 4.0.0"
 gem "jquery-ui-rails", "~> 4.0.5"
 gem 'capybara'
+gem "factory_girl_rails", "~> 4.0"
 
 group :development do
   gem 'sqlite3', '1.3.8'
