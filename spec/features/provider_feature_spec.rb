@@ -3,18 +3,21 @@ require 'spec_helper'
 feature "Provider Management" do
 
   scenario "User creates new provider" do
-    fill_in "Name", :with => "My provider"
+    visit "/providers/new"
+
+    fill_in "provider_name", :with => "My provider"
     fill_in "Full contact name", :with => "John Doe Jr."
     fill_in "E-mail", :with => "john.doe@yahoo.com"
     fill_in "Your desired username", :exact => true, :with => "Username"
     fill_in "Password", :with => "Pass1"
 
     click_button "Create Provider"
-    expect(page).to have_text("Provider was created successfully.")
+    expect(page).to have_text("Provider was successfully created.")
 
   end
 
   scenario "User creates new provider without name" do
+    visit "/providers/new"
 
     fill_in "Full contact name", :with => "John Doe Jr."
     fill_in "E-mail", :with => "john.doe@yahoo.com"
